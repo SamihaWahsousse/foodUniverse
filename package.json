@@ -1,0 +1,17 @@
+{
+  "name": "fooduniversev2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "samiha wahsousse",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

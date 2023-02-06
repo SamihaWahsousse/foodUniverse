@@ -1,0 +1,11 @@
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.foodCard{
+    width: 15rem;
+}
+
+/*body{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("img/2tim-meyer-GZzQAQyxACw-unsplash.jpg");
+    background-size: cover;
+}*/

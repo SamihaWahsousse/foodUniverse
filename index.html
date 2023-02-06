@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    /> 
+ -->
+
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <!--nav bar de gauche-->
+        <div class="col-2 search-container ms-0">
+          nav bare gauche
+          <form class="d-flex" role="searchMeal">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Type a recipe or a dish name here..."
+              id="userInput"
+            />
+            <button
+              class="btn btn-outline-success"
+              id="search-btn"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+        <div class="col-10">
+          <h3>les cartes des repas</h3>
+          <div class="foodCard" id="resultFood">
+            <img src="./assets/css/imgFood.png" class="card-img-top food_img" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary" id="show recepie"
+                >Get recepie</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <header id="header">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+          <img
+            class="logo"
+            src="logo.png"
+            alt="logo"
+            width="20%"
+            height="20%"
+          />
+        </a>
+      </div>
+    </header>-->
+
+    <!--<h3>Find Meals For Your Ingredient</h3>
+      <form>
+        <label for="mealSearch">Search Meal from API:</label>
+        <input
+          type="search"
+          id="mealSearch"
+          name="mealSearch"
+          placeholder="Search Meal"
+        />
+        <input type="submit" />
+      </form>
+
+      <div class="container Meals d-flex">
+        <div class="foodCard1">
+          <img src="" class="card-img-top food_img" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Get recepie</a>
+          </div>
+        </div>
+
+        <div class="foodCard2">
+          <img src="" class="card-img-top food_img" />
+          <div class="card-body">
+            <h5 class="card-title">Food Name</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Get recepie</a>
+          </div>
+        </div>
+        <div class="foodCard3">
+          <img src="" class="card-img-top food_img" />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Get recepie</a>
+          </div>
+        </div>
+      </div>
+    </main>-->
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
