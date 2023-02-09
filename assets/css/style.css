@@ -1,11 +1,33 @@
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-.foodCard{
+#userInput{
     width: 15rem;
 }
 
+
+.card{
+    width: 10rem;
+    height: 18rem;
+    background-color: blanchedalmond;
+    border-radius: 20%;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .20rem;
+    border: 1px solid black;
+}
+#food_img{
+    width  : 14rem;
+    height : 150px;
+    border-radius: 20%;
+}
+
+.hideFoodCard {
+    display: none;
+}
 /*body{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("img/2tim-meyer-GZzQAQyxACw-unsplash.jpg");
     background-size: cover;
-}*/
+}
+*/

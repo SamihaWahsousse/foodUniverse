@@ -2,6 +2,7 @@
 // de fenêtre native de navigateur
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
+const { sandboxed } = require('process')
 
 const createWindow = () => {
   // Création de la fenêtre de navigateur.
@@ -9,7 +10,10 @@ const createWindow = () => {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      nodeIntegration:true,
+      preload: path.join(__dirname, 'preload.js'),
+      webSecurity: true,
+      sandbox : true
     }
   })
 

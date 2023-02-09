@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <!-- 
     <meta
+      charset="UTF-8"
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    /> 
- -->
-
+      content="connect-src 'self' https://api.thecatapi.com; script-src 'self' https://api.thecatapi.com"
+    />
+    
     <title>Hello World!</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <!--nav bar de gauche-->
-        <div class="col-2 search-container ms-0">
+        <div class="col-2 search-container">
           nav bare gauche
-          <form class="d-flex" role="searchMeal">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Type a recipe or a dish name here..."
-              id="userInput"
+         <form class="d-flex flex-column">
+            <input class="form-control me-2" id="searchInput"              placeholder="Type a recipe or a dish name here..."
             />
-            <button
-              class="btn btn-outline-success"
-              id="search-btn"
-              type="submit"
-            >
-              Search
-            </button>
-          </form>
+          <button class="btn btn-outline-success m-1" id="search_btn">
+            Search
+          </button>
+          <!-- </form> -->
         </div>
         <div class="col-10">
-          <h3>les cartes des repas</h3>
-          <div class="foodCard" id="resultFood">
-            <img src="./assets/css/imgFood.png" class="card-img-top food_img" />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary" id="show recepie"
-                >Get recepie</a
-              >
-            </div>
+          <h3 class="text-center">les cartes des repas</h3>
+          <div
+            data-food-cards-container
+            class="container-fluid d-flex flex-md-row flex-wrap justify-content-between"
+          >
+            <template data-food-template>
+              <div class="card">
+                <img
+                  src=""
+                  class="card-img-top"
+                  id="food_image"
+                  data-food-image
+                />
+                <div class="card-body">
+                  <h5 class="card-title" id="food_title" data-food-name>
+                    food name
+                  </h5>
+                  <a href="#" class="btn btn-primary">food recepie</a>
+                </div>
+              </div>
+            </template>
           </div>
+
+          <!--<div id="card">
+              <div class="foodCard" id="result_food">
+                <img class="card-img-top" src="" id="food_image" />
+                <div class="card-body">
+                  <h5 class="card-title" id="food_title"></h5>
+                </div>
+              </div>
+            </div>-->
         </div>
       </div>
     </div>

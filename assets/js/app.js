@@ -1,18 +1,15 @@
-let resultFood = document.getElementById("resultFood"); 
-let searchBtn  = document.getElementById("search-btn");
-let urlAPI     = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
-let userInput  = document.getElementById("userInput").value;
+let searchBtn           = document.getElementById("search_btn");
 
-//event listner
-//searchBtn.addEventListener ('click' , getMealList);
+searchBtn.addEventListener("click", getMeals);
 
-//get mealList that match with thne name of recepie
+//test d'une autre API de chat
+async function getMeals(){
+ 
+     let urlAPI   = 'https://api.thecatapi.com/v1/images/search?limit=10';
 
-//function getMealList(){
-    
-fetch (urlAPI + "Big Mac")
-.then ((response) => response.json())
-.then ((data) => {
-    console.log(data);
-}); 
+     console.log('hello');
+    const apiFetch = await fetch(urlAPI)
+    const apiResult = await apiFetch.json()
 
+ 
+}
